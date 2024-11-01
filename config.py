@@ -6,17 +6,17 @@ env_vars = {
   #Get For @BotFather
   "BOT_TOKEN": "8188564702:AAHxYGMmAvYFtbZv5Mi0xD0bBPkPMhyV9uA",
   # Get For tembo.io
-  "DATABASE_URL_PRIMARY": "postgresql://itzmecp_owner:wKDqWiEdQ7c2@ep-bold-voice-a5kb68wc.us-east-2.aws.neon.tech/itzmecp?sslmode=require",
+  "DATABASE_URL_PRIMARY": "postgres://koyeb-adm:ho2dWgXF1mvr@ep-weathered-firefly-a2lujlmx.eu-central-1.pg.koyeb.app/koyebdb",
   # Logs Channel Username Without @
-  "CACHE_CHANNEL": "itzcpbotlogs",
+  "CACHE_CHANNEL": "AnimeMangacp",
   # Force Subs Channel username without @
   "CHANNEL": "Animeforyoulk",
   # {chap_num}: Chapter Number
   # {chap_name} : Manga Name
   # Ex : Chapter {chap_num} {chap_name} @Manhwa_Arena
-  "FNAME": "",
+  "FNAME": "{chap_num} {chap_name} [SLMangaBay]",
   # Put Thumb Link 
-  "THUMB": ""
+  "THUMB": "slmangabay.jpg"
 }
 
 dbname = env_vars.get('DATABASE_URL_PRIMARY') or env_vars.get('DATABASE_URL') or 'sqlite:///test.db'
