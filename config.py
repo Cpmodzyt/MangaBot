@@ -8,9 +8,9 @@ env_vars = {
   # Get For tembo.io
   "DATABASE_URL_PRIMARY": "postgres://koyeb-adm:ho2dWgXF1mvr@ep-weathered-firefly-a2lujlmx.eu-central-1.pg.koyeb.app/koyebdb",
   # Logs Channel Username Without @
-  "CACHE_CHANNEL": "AnimeMangacp",
+  "CACHE_CHANNEL": "Animemangacp",
   # Force Subs Channel username without @
-  "CHANNEL": "Animeforyoulk",
+  "CHANNEL": "AnimeDownloaderX",
   # {chap_num}: Chapter Number
   # {chap_name} : Manga Name
   # Ex : Chapter {chap_num} {chap_name} @Manhwa_Arena
