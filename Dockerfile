@@ -1,21 +1,14 @@
-# For more information, please refer to https://aka.ms/vscode-docker-python
-FROM python
+# Use an official Python runtime as a base image
+FROM python:3.11-slim
 
-# Keeps Python from generating .pyc files in the container
-ENV PYTHONDONTWRITEBYTECODE=1
-
-# Turns off buffering for easier container logging
-ENV PYTHONUNBUFFERED=1
-
+# Set the working directory in the container
 WORKDIR /app
 
-# Install pip requirements
-COPY requirements.txt .
-RUN python -m pip install --no-cache-dir -r requirements.txt
+# Copy the current directory contents into the container
+COPY . .
 
-COPY . /app
+# Install Python dependencies (if you have a requirements.txt file)
+RUN pip install --no-cache-dir -r requirements.txt
 
-RUN alembic upgrade head
-
-# During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
-CMD ["bash", "start.sh"]
+# Command to run the application
+CMD ["python", "main.py"]
